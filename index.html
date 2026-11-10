@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlertaFlow | Alerta de Enchentes</title>
+  </head>
+  <body>
+    <!--CADASTRAR PONTO DE ALAGAMENTO-->
+    <section id="registrar-ponto">
+      <h2>Cadastre um ponto de alagamento.</h2>
+
+      <p>
+        Encontrou uma área alagada, ou com risco de alagamentos/enchentes?
+        Compartilhe as informações com a comunidade!
+      </p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="local">Endereço ou local</label>
+          <input
+            type="text"
+            id="local"
+            name="local"
+            placeholder="Ex: Avenida Brasil, número 100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado" required>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PE">Pernambuco</option>
+            <option value="BA">Bahia</option>
+            <option value="PR">Paraná</option>
+            <option value="outro">Outro estado</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="nivel">Nível do alagamento:</label>
+          <select name="nivel" id="nivel" required>
+            <option value="#">Selecione</option>
+            <option value="">Baixo</option>
+            <option value="">Moderado</option>
+            <option value="">Alto</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="foto">Foto do local(opcional):</label>
+          <input type="file" name="foto" id="foto" accept="image/*" />
+        </div>
+
+        <button type="submit">Enviar Ocorrência</button>
+      </form>
+    </section>
+
+    <!--CONTATO-->
+    <section id="contato"></section>
+    <h2>Entre em contato</h2>
+
+    <p>Tem alguma dúvida, sugestão ou encontrou um problema na plataforma?</p>
+
+    <form action="#" method="post">
+      <div>
+        <label for="contato-nome">Nome:</label>
+        <input type="text" id="contato-nome" name="nome" required />
+      </div>
+
+      <div>
+        <label for="contato-email">E-mail:</label>
+        <input type="email" id="contato-email" name="email" required />
+      </div>
+
+      <div>
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required />
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <!--FOOTER-->
+    <footer>
+      <h2>AlertaFlow</h2>
+
+      <p>Inormação que protege. Comunidade que ajuda.</p>
+
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="Contato">Contato</a>
+      </nav>
+
+      <div>
+        <a href="#">Instagram</a>
+        <a href="#">Whatsapp</a>
+      </div>
+
+      <div>
+        <label for="github">Github dos desenvolvedores</label>
+      </div>
+
+      <p>&copy; 2026 AlertaFlow. Todos os direitos reservados.</p>
+      <p>
+        Esta plataforma é colaborativa e não substitui os alertas oficiais da
+        Defesa Civil.
+      </p>
+    </footer>
+  </body>
+</html>
